@@ -17,14 +17,13 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="row m-2">
-            <!--  COLUMN 1  -->
-            <div class="col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+            <!--  Navbar    -->
+            <div class="column-1 col-2 col-sm-1 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
                 <nav class="list-group rounded">
                     <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-t"></i>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
                         <i class="fa-solid fa-house-chimney pe-2 float-start pt-1"></i>
@@ -46,8 +45,8 @@
                         <span class="d-none d-xl-block position-relative float-start">Bookmarks</span>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                        <i class="fa-solid fa-list-ul pe-2 float-start pt-1"></i>
-                        <span class="d-none d-xl-block position-relative float-start">List</span>
+                        <i class="fa-solid fa-fire pe-2 float-start pt-1"></i>
+                        <span class="d-none d-xl-block position-relative float-start">Top Articles</span>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
                         <i class="fa-solid fa-user pe-2 float-start pt-1"></i>
@@ -57,12 +56,12 @@
                         <i class="fa-solid fa-ellipsis-h pe-2 float-start pt-1"></i>
                         <span class="d-none d-xl-block position-relative float-start">More</span>
                     </a>
-                    <button type="button" class="btn btn-primary rounded-pill mt-2">Tuit</button>
+                    <button type="button" class="btn btn-primary tuiter-bg-color rounded-pill mt-2">Tuit</button>
                 </nav>
             </div>
 
-            <!--  COLUMN 2  -->
-            <div class="col-6 col-sm-10 col-md-10 col-lg-7 col-xl-7 col-xxl-7 text-white">
+            <!--  Content  -->
+            <div class="column-2 col-6 col-sm-7 col-md-6 col-lg-7 col-xl-7 col-xxl-7 text-white">
                 <div class="row mb-2">
                     <div class="col-10 position-relative">
                         <i class="fa-solid fa-magnifying-glass text-primary position-absolute p-2 m-1"></i>
@@ -70,155 +69,164 @@
                             aria-label="search tuiter">
                     </div>
                     <div class="col-2">
-                        <a href="explore-settings.html"><i class="fa-solid fa-cog fa-2x pt-1"></i></a>
+                        <a href="../explore-settings.html"><i class="fa fa-cog pt-3"></i></a>
                     </div>
                 </div>
                 <ul class="nav nav-tabs mb-2 navbar-expand">
                     <li class="nav-item">
-                        <a class="nav-link active px-md-2" href="for-you.html">For You</a>
+                        <a class="nav-link active px-md-2" href="#">For You</a>
                     </li>
                     <li class="nav-item pe-md-0 me-md-0">
-                        <a class="nav-link px-md-2 px-sm-1" href="trending.html">Trending</a>
+                        <a class="nav-link px-md-2 px-sm-1" href="#">Trending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-md-2 px-sm-1" href="news.html">News</a>
+                        <a class="nav-link px-md-2 px-sm-1" href="#">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link px-md-2 px-sm-1" href="sports.html">Sports</a>
+                        <a class="nav-link px-md-2 px-sm-1" href="#">Sports</a>
                     </li>
                     <li class="nav-item d-sm-none d-md-block">
-                        <a class="nav-link px-md-2" href="entertainment.html">Entertainment</a>
+                        <a class="nav-link px-md-2" href="#">Entertainment</a>
                     </li>
                 </ul>
                 <main>
                     <div class="position-relative">
-                        <img src="../../images/starship.png" class="w-100" alt="SpaceX Starship">
-                        <h1 class="wd-image-description text-white position-absolute bottom-0">SpaceX's Starship</h1>
+                        <img src="../../../images/white_mountains.jpeg" class="w-100" alt="White Mountains">
+                        <div class="position-absolute bottom-0">
+                            <h4 class="wd-image-description text-white">White Mountains • 2023</h4>
+                            <h1 class="wd-image-description text-white">Ski Season is here!</h1>
+                        </div>
+                    </div>
+                    <div class="row border m-0">
+                        <div class="col-9">
+                            <div class="text-secondary small">Politics • Trending</div>
+                            <div class="text-black fw-bold small">Seizures</div>
+                            <div class="text-secondary small pt-0">4,953 Tuits</div>
+                        </div>
+                        <div class="col-3 wd-tuit-img">
+                            <i class="fa-solid fa-ellipsis-h pe-2 float-end pt-2 tuit-gray"></i>
+                        </div>
+                    </div>
+                    <div class="row border m-0">
+                        <div class="col-9">
+                            <div class="text-secondary small">Sports • Trending</div>
+                            <div class="text-black fw-bold small">RIP Bean</div>
+                            <div class="text-secondary small pt-0">18K Tuits</div>
+                        </div>
+                        <div class="col-3 wd-tuit-img">
+                            <i class="fa-solid fa-ellipsis-h pe-2 float-end pt-2 tuit-gray"></i>
+                        </div>
+                    </div>
+                    <div class="row border m-0">
+                        <div class="col-9">
+                            <div class="text-secondary small">Politics • Trending</div>
+                            <div class="text-black fw-bold small">Durham</div>
+                            <div class="text-secondary small pt-0">256K Tuits</div>
+                        </div>
+                        <div class="col-3 wd-tuit-img">
+                            <i class="fa-solid fa-ellipsis-h pe-2 float-end pt-2 tuit-gray"></i>
+                        </div>
                     </div>
 
                     <div class="row border m-0">
                         <div class="col-9">
-                            <div class="text-secondary small">Web Development</div>
-                            <span class="text-black fw-bold small">React JS
-                                <i class="fa-solid fa-circle-check text-black ps-2 small"></i></span>
-                            <span class="text-secondary small"> - 2h</span>
-                            <p class="text-black small fw-bold">React.js is a component based front end library that
-                                makes it very easy to build Single Page Applications or SPAs</p>
+                            <div class="text-secondary small">Trending in Business and Finance</div>
+                            <div class="text-black fw-bold small">#DirectedEvolution</div>
+                            <div class="text-secondary small pt-0">172K Tuits</div>
                         </div>
                         <div class="col-3 wd-tuit-img">
-                            <img src="../../images/react.png" class="float-end rounded mt-2" alt="react js logo">
-                        </div>
-                    </div>
-                    <div class="row border m-0">
-                        <div class="col-9">
-                            <span class="text-black fw-bold small">JavaScript
-                                <i class="fa-solid fa-circle-check text-black ps-2 small"></i></span>
-                            <span class="text-secondary small"> - 2h</span>
-                            <p class="text-black small fw-bold m-0">JavaScript is a programming language that can run on
-                                browsers as well as desktops</p>
-                            <div class="text-secondary small pt-0">123K Tuits</div>
-                        </div>
-                        <div class="col-3 wd-tuit-img">
-                            <img src="../../images/js.jpeg" class="float-end rounded mt-2" alt="javascript logo">
-                        </div>
-                    </div>
-                    <div class="row border m-0">
-                        <div class="col-9">
-                            <div class="text-secondary small">Web Development</div>
-                            <div class="text-black fw-bold small">JQuery</div>
-                            <div class="text-secondary small pt-0">123K Tuits</div>
-                        </div>
-                        <div class="col-3 wd-tuit-img">
-                            <img src="../../images/jquery.jpeg" class="float-end rounded mt-2" alt="javascript logo">
-                        </div>
-                    </div>
-                    <div class="row border m-0">
-                        <div class="col-9">
-                            <div class="text-secondary small">Web Development</div>
-                            <span class="text-black fw-bold small">NodeJS
-                                <i class="fa-solid fa-circle-check text-black ps-2 small"></i></span>
-                            <span class="text-secondary small"> - 2h</span>
-                            <div class="text-secondary small pt-0">123K Tuits</div>
-                        </div>
-                        <div class="col-3 wd-tuit-img">
-                            <img src="../../images/nodejs.jpeg" class="float-end rounded mt-2" alt="javascript logo">
+                            <i class="fa-solid fa-ellipsis-h pe-2 float-end pt-2 tuit-gray"></i>
                         </div>
                     </div>
                 </main>
             </div>
 
-            <!--  COLUMN 3  -->
-            <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-3 col-xxl-3 text-white">
-                <div class="row wd-follow-row py-2 border rounded-top b-gray-400 ms-1">
+            <!--  More    -->
+            <div class="column-3 d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-3 col-xxl-3 text-white">
+                <div class="row wd-top-row py-2 border rounded-top b-gray-400 ms-1">
                     <div class="text-black fw-bold small">Who to follow</div>
                 </div>
-                <div class="row wd-follow-row py-2 border border-top-0 b-gray-400 ms-1">
-                    <div class="col-2 wd-logo">
-                        <img src="../../images/java.png">
+                <div class="row py-2 border border-top-0 b-gray-400 ms-1">
+                    <div class="col-2 wd-logo rounded-circle">
+                        <img src="../../../images/neu_logo.jpeg">
                     </div>
                     <div class="col-7">
-                        <span class="fw-bold text-black small">Java<i
+                        <span class="fw-bold text-black small">Northeastern U.<i
                                 class="fa-solid fa-circle-check text-black ps-2"></i></span>
-                        <div class="wd-handle text-secondary small">@Java</div>
+                        <div class="wd-handle text-secondary small">@Northeastern</div>
                     </div>
                     <div class="col-3 mt-1 mt-1">
                         <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
                     </div>
                 </div>
-                <div class="row wd-follow-row py-2 border border-top-0 b-gray-400 ms-1">
-                    <div class="col-2 wd-logo">
-                        <img src="../../images/rspace.jpeg">
+                <div class="row py-2 border border-top-0 b-gray-400 ms-1">
+                    <div class="col-2 wd-logo rounded-circle">
+                        <img src="../../../images/elon.jpeg">
                     </div>
                     <div class="col-7">
-                        <span class="fw-bold text-black small">Relativity Space<i
+                        <span class="fw-bold text-black small">Elon Dusk<i
                                 class="fa-solid fa-circle-check text-black ps-2"></i></span>
-                        <div class="wd-handle text-secondary small">@relativityspace</div>
+                        <div class="wd-handle text-secondary small">@elondusk</div>
+                    </div>
+                    <div class="col-3 mt-1">
+                        <button type="button"
+                            class="btn btn-primary rounded-pill float-end wd-follow-button">Follow</button>
+                    </div>
+                </div>
+                <div class="row py-2 border border-top-0 b-gray-400 ms-1">
+                    <div class="col-2 wd-logo rounded-circle">
+                        <img src="../../../images/spirit.jpeg">
+                    </div>
+                    <div class="col-7">
+                        <span class="fw-bold text-black small">Spirit Raillines<i
+                                class="fa-solid fa-circle-check text-black ps-2"></i></span>
+                        <div class="wd-handle text-secondary small">@SpiritRaillines</div>
                     </div>
                     <div class="col-3 mt-1">
                         <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
                     </div>
                 </div>
-                <div class="row wd-follow-row py-2 border border-top-0 b-gray-400 ms-1">
-                    <div class="col-2 wd-logo">
-                        <img src="../../images/vgalactic.jpeg">
+                <div class="row py-2 border border-top-0 b-gray-400 ms-1">
+                    <div class="col-2 wd-logo rounded-circle">
+                        <img src="../../../images/southeast.jpeg">
                     </div>
                     <div class="col-7">
-                        <span class="fw-bold text-black small">Virgin Galactic<i
+                        <span class="fw-bold text-black small">SouthEast<i
                                 class="fa-solid fa-circle-check text-black ps-2"></i></span>
-                        <div class="wd-handle text-secondary small">@virgingalactic</div>
+                        <div class="wd-handle text-secondary small">@SoutheestAir</div>
                     </div>
                     <div class="col-3 mt-1">
                         <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
                     </div>
                 </div>
-                <div class="row wd-follow-row py-2 border border-top-0 b-gray-400 ms-1">
-                    <div class="col-2 wd-logo">
-                        <img src="../../images/nasa.jpeg">
-                    </div>
-                    <div class="col-7">
-                        <span class="fw-bold text-black small">NASA<i
-                                class="fa-solid fa-circle-check text-black ps-2"></i></span>
-                        <div class="wd-handle text-secondary small">@NASA</div>
-                    </div>
-                    <div class="col-3 mt-1">
-                        <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
-                    </div>
+                <div class="row py-2 border border-top-0 b-gray-400 ms-1"">
+                    <div class=" col-2 wd-logo rounded-circle">
+                    <img src="../../../images/lucid.png">
                 </div>
-                <div class="row wd-follow-row py-2 border rounded-bottom border-top-0 b-gray-400 ms-1">
-                    <div class="col-2 wd-logo">
-                        <img src="../../images/tesla.png">
-                    </div>
-                    <div class="col-7">
-                        <span class="fw-bold text-black small">Telsa<i
-                                class="fa-solid fa-circle-check text-black ps-2"></i></span>
-                        <div class="wd-handle text-secondary small">@Tesla</div>
-                    </div>
-                    <div class="col-3 mt-1">
-                        <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
-                    </div>
+                <div class="col-7">
+                    <span class="fw-bold text-black small">Lucid Soap<i
+                            class="fa-solid fa-circle-check text-black ps-2"></i></span>
+                    <div class="wd-handle text-secondary small">@LucidSoap</div>
+                </div>
+                <div class="col-3 mt-1">
+                    <button type="button" class="btn btn-primary rounded-pill float-end">Follow</button>
                 </div>
             </div>
+
+            <div class="row wd-bottom-row py-2 border rounded-bottom border-top-0 b-gray-400 ms-1">
+                <a class="tuiter-color" href="#">Show more</a>
+            </div>
+
+            <div class="py-2 ms-1">
+                <p id="toc">Terms of Service Privacy Policy Cookie Policy Accessibility Ads Info More &#8230;
+                    &#32;
+                    &#169; 2023 Tuiter, Inc.
+                </p>
+            </div>
+
         </div>
+
+    </div>
     </div>
 
 </body>

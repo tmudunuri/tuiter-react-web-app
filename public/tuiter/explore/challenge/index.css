@@ -1,0 +1,186 @@
+body {
+    background-color: white;
+}
+
+.text-black {
+    color: black !important;
+}
+
+/* Navbar */
+.list-group-item {
+    background-color: white;
+    color: black;
+}
+
+.row.py-2.border.rounded-bottom.border-top-0.b-gray-400.ms-1 {
+    border-color: white;
+}
+
+.column-1>nav>a.active {
+    background-color: white !important;
+    font-weight: bolder;
+    color: black;
+}
+
+.list-group-item {
+    border: none;
+}
+
+/* Content */
+input {
+    background-color: #f8f9f9 !important;
+    border-style: none !important;
+    text-indent: 30px;
+}
+
+.column-2 {
+    border-left-style: solid !important;
+    border-right-style: solid !important;
+    border-left-color: #f8f9f9 !important;
+    border-right-color: #f8f9f9 !important;
+    padding: 0px !important;
+}
+
+.column-2>.row>.col-10.position-relative {
+    padding-left: 1.5em !important;
+}
+
+.fa-magnifying-glass {
+    color: gray !important;
+}
+
+.fa-cog {
+    color: #303037 !important;
+    width: 20px;
+    height: 20px;
+    float: right;
+    padding-right: 2em;
+}
+
+.fa-space-awesome {
+    padding-left: 5px;
+}
+
+.nav-tabs {
+    border-style: none !important;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+
+.nav-item>a {
+    color: gray !important;
+    padding: 0.5em !important;
+    padding-left: 2em !important;
+    padding-right: 2em !important;
+}
+
+.nav-tabs {
+    margin-bottom: 0px !important;
+}
+
+.nav-tabs .nav-link {
+    background-color: white !important;
+    border-style: none !important;
+}
+
+.nav-item>a:hover {
+    border-bottom-color: #1c9bf0 !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 5px !important;
+}
+
+.nav-link.active {
+    text-decoration: bolder;
+}
+
+.nav-link.active {
+    border-bottom-color: #1c9bf0 !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 5px !important;
+}
+
+main>.position-relative>img {
+    border-style: solid !important;
+    border-color: #f8f9f9 !important;
+}
+
+main>.row {
+    padding-top: 5px !important;
+    border-style: none !important;
+}
+
+main>.row>.col-9>div {
+    padding-top: 2px !important;
+}
+
+/* More */
+.fa-circle-check {
+    color: white !important;
+}
+
+.column-3>.row {
+    border-style: none !important;
+    background-color: #f8f9f9;
+}
+
+.wd-top-row {
+    border-top-right-radius: 15px !important;
+    border-top-left-radius: 15px !important;
+    font-size: larger;
+}
+
+.wd-bottom-row {
+    border-bottom-right-radius: 15px !important;
+    border-bottom-left-radius: 15px !important;
+}
+
+.row>.text-black {
+    color: black !important;
+}
+
+button.btn-primary.rounded-pill.float-end {
+    background-color: #16181c !important;
+    border-color: #16181c !important;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+
+.wd-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.wd-tuit-img img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.wd-image-description {
+    padding-left: 14px;
+}
+
+.fa-check-circle:before,
+.fa-circle-check:before {
+    color: #1c9bf0;
+}
+
+.tuiter-color {
+    text-decoration: none;
+    color: #1c9bf0;
+}
+
+.tuiter-bg-color {
+    background-color: #1c9bf0;
+}
+
+.tuit-gray {
+    color: #303037
+}
+
+#toc {
+    color: #16181c;
+    font-size: small;
+}
