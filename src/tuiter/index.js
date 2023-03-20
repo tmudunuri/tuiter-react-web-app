@@ -30,7 +30,7 @@ function Tuiter() {
                 </div>
                 <div className="col-6 col-sm-10 col-md-10 col-lg-6 col-xl-6 col-xxl-6" style={{ "position": "relative" }}>
                     <Routes>
-                        <Route path="/" element={<HomeComponent />} />
+                        <Route index element={<HomeComponent />} />
                         <Route path="home" element={<HomeComponent />} />
                         <Route path="explore" element={<ExploreComponent />} />
                         <Route path="profile" element={<ProfileComponent />} />

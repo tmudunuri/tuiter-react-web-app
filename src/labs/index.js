@@ -8,10 +8,9 @@ function Labs() {
         <div>
             <Nav />
             <Routes>
-                <Route index
-                    element={<Assignment6 />} />
-                <Route path="a7"
-                    element={<Assignment7 />} />
+                <Route index element={<Assignment7 />} />
+                <Route path="a6" element={<Assignment6 />} />
+                <Route path="a7" element={<Assignment7 />} />
             </Routes>
         </div>
     );
