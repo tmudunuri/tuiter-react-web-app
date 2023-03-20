@@ -7,8 +7,8 @@ import "./index.css"
 const ProfileComponent = () => {
     const profile = useSelector(state => state.profile);;
 
-    const dob = new Date(profile.dateOfBirth).toLocaleString('en-us', { year: "numeric", month: "long", day: "numeric" });
-    const doj = new Date(profile.dateJoined).toLocaleString('en-us', { year: "numeric", month: "long" });
+    const dob = new Date(profile.dateOfBirth).toLocaleString('en-us', { year: "numeric", month: "long", day: "numeric", timeZone: 'UTC'  });
+    const doj = new Date(profile.dateJoined).toLocaleString('en-us', { year: "numeric", month: "long", timeZone: 'UTC'  });
 
     return (
         <div className="bg-white rounded">

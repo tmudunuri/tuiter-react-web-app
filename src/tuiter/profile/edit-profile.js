@@ -56,37 +56,37 @@ const EditProfile = () => {
             <br />
 
             <div className="mt-5 px-3">
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} />
-                    <label for="name">Name</label>
+                <div className="form-floating">
+                    <input type="text" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} />
+                    <label htmlFor="name">Name</label>
                 </div>
             </div>
 
             <div className="mt-4 px-3">
-                <div class="form-floating">
-                    <textarea type="text" class="w-100 form-control" id="bio" value={bio} onChange={(e) => setBio(e.target.value)} />
-                    <label for="bio">Bio</label>
+                <div className="form-floating">
+                    <textarea type="text" className="w-100 form-control" id="bio" value={bio} onChange={(e) => setBio(e.target.value)} />
+                    <label htmlFor="bio">Bio</label>
                 </div>
             </div>
 
             <div className="mt-4 px-3">
-                <div class="form-floating">
-                    <input type="text" class="w-100 form-control" id="location" value={location} onChange={(e) => setLocation(e.target.value)} />
-                    <label for="location">Location</label>
+                <div className="form-floating">
+                    <input type="text" className="w-100 form-control" id="location" value={location} onChange={(e) => setLocation(e.target.value)} />
+                    <label htmlFor="location">Location</label>
                 </div>
             </div>
 
             <div className="mt-4 px-3">
-                <div class="form-floating">
-                    <input type="url" class="w-100 form-control" id="website" value={website} onChange={(e) => setWebsite(e.target.value)} />
-                    <label for="website">Website</label>
+                <div className="form-floating">
+                    <input type="url" className="w-100 form-control" id="website" value={website} onChange={(e) => setWebsite(e.target.value)} />
+                    <label htmlFor="website">Website</label>
                 </div>
             </div>
 
             <div className="mt-4 px-3 pb-3">
-                <div class="form-floating">
-                    <input type="date" class="w-100 form-control" id="dob" value={dob} onChange={(e) => setDOB(e.target.value)} />
-                    <label for="dob">Birth Date</label>
+                <div className="form-floating">
+                    <input type="date" className="w-100 form-control" id="dob" value={dob} onChange={(e) => setDOB(e.target.value)} />
+                    <label htmlFor="dob">Birth Date</label>
                 </div>
             </div>
 
