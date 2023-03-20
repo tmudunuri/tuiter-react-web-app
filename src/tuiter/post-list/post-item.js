@@ -5,7 +5,7 @@ const PostItem = ({ post }) => {
         <li className="list-group-item">
             <div className="row">
                 <div className="col-1">
-                    <img className="rounded-circle" src={`/images/${post.avatar}`} width="50px" height="50px" alt="user_avatar" />
+                    <img className="rounded-circle" src={`/images/${post.avatar}`} width="50px" height="50px" alt="user_profile" />
                 </div>
 
                 <div className="col-11 ps-4">

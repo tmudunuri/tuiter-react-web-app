@@ -1,0 +1,16 @@
+{
+    "_id": 123,
+    "firstName": "Jimmy",
+    "lastName": "Hunter",
+    "handle": "@jhunter",
+    "profilePicture": "neu_logo.jpeg",
+    "bannerPicture": "banner.jpeg",
+    "bio": "Traveller",
+    "website": "website.com",
+    "location": "Boston, MA",
+    "dateOfBirth": "1990-1-1",
+    "dateJoined": "2009-4-1",
+    "followingCount": 50,
+    "followersCount": 666666,
+    "tuits": 0
+}
