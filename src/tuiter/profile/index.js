@@ -14,7 +14,7 @@ const ProfileComponent = () => {
         <div className="bg-white rounded">
             <div className="row">
                 <div className="col-1 my-auto fs-4">
-                    <Link to={-1}><i className="fa-solid fa-arrow-left-long ps-3"></i></Link>
+                    <Link to={"/"}><i className="fa-solid fa-arrow-left-long ps-3"></i></Link>
                 </div>
 
                 <div className="col-11 ps-5">
