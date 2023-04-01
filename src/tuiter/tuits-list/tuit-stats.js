@@ -1,33 +1,36 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { likeTuit } from "../tuits/tuits-reducer";
+import { updateTuitThunk } from "../../services/tuits-thunks"
 
-const TuitStats = ({ tuit }) => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRetweet, faHeart, faUpload, faThumbsDown, faShare, faShareNodes } from '@fortawesome/free-solid-svg-icons'
+
+const TuitStats = (
+    {
+        tuit
+    }) => {
     const dispatch = useDispatch();
-    const likeTuitHandler = (id) => {
-        dispatch(likeTuit(id));
-    }
-
     return (
         <div className="row">
-            <div className="col">
-                <i className="fa-regular fa-comment pe-2"></i>
-                <span className="text-muted">{tuit.replies}</span>
-            </div>
-            <div className="col">
-                <i className="fa-solid fa-retweet pe-2"></i>
-                <span className="text-muted">{tuit.retuits}</span>
-            </div>
-            <div className="col">
-                {tuit.liked ? <i className="fa-solid fa-heart text-danger pe-2" onClick={() => likeTuitHandler(tuit._id)}></i>
-                    : <i className="fa-regular fa-heart pe-2" onClick={() => likeTuitHandler(tuit._id)}></i>}
-                <span className="text-muted">{tuit.likes}</span>
-            </div>
-            <div className="col">
-                <i className="fa-solid fa-share-nodes"></i>
-            </div>
+
+            <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#"><i className="bi bi-chat"></i> <span>{tuit.replies}</span></a></div>
+            <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#"><FontAwesomeIcon icon={faRetweet} /> <span>{tuit.retuits}</span></a></div>
+            {!tuit.liked && <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#">
+                <FontAwesomeIcon onClick={() => dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes + 1, liked: true }))} icon={faHeart} />
+                <span>{parseInt(tuit.likes)}</span></a></div>}
+            {tuit.liked && <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#">
+                <FontAwesomeIcon onClick={() => dispatch(updateTuitThunk({ ...tuit, likes: tuit.likes - 1, liked: false }))} style={{ "color": "red" }} icon={faHeart} />
+                <span>{parseInt(tuit.likes)}</span></a></div>}
+            {!tuit.disliked && <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#">
+                <FontAwesomeIcon onClick={() => dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes + 1, disliked: true }))} icon={faThumbsDown} />
+                <span>{isNaN(parseInt(tuit.dislikes)) ? 0 : parseInt(tuit.dislikes)}</span></a></div>}
+            {tuit.disliked && <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#">
+                <FontAwesomeIcon onClick={() => dispatch(updateTuitThunk({ ...tuit, dislikes: tuit.dislikes - 1, disliked: false }))} style={{ "color": "red" }} icon={faThumbsDown} />
+                <span>{isNaN(parseInt(tuit.dislikes)) ? 0 : parseInt(tuit.dislikes)}</span></a></div>}
+            <div className="col-2"><a className="text-muted" style={{ "textDecoration": "none" }} href="#"><FontAwesomeIcon icon={faShareNodes} /> <span></span></a></div>
+
         </div>
-    )
+    );
 }
 
 export default TuitStats;

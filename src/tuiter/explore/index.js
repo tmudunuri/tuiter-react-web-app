@@ -6,15 +6,15 @@ const ExploreComponent = () => {
     return (
         <>
             <div className="row mt-2">
-                <div class="col-10">
-                    <div class="position-relative">
+                <div className="col-10">
+                    <div className="position-relative">
                         <input placeholder="Search Tuiter"
                             className="form-control rounded-pill ps-5" />
-                        <span class="position-absolute wd-search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span className="position-absolute wd-search-icon"><i className="fa-solid fa-magnifying-glass"></i></span>
                     </div>
                 </div>
-                <div class="col-1 m-auto">
-                    <a href="#"><i class="fa-solid fa-cog fa-2x pt-1"></i></a>
+                <div className="col-1 m-auto">
+                    <a href="#"><i className="fa-solid fa-cog fa-2x pt-1"></i></a>
                 </div>
             </div>
             <ul className="nav nav-pills my-2">
