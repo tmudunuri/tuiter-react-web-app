@@ -20,7 +20,7 @@ const TuitItem = ({ tuit }) => {
                 <div className="col-10">
                     <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i>
                     <div className="fw-bolder">
-                        {tuit.username} <i className="fa-solid fa-circle-check px-2"></i>
+                        {tuit.username} <i className="fa-solid fa-circle-check text-primary px-1 small"></i>
                         <span className="fw-normal">{tuit.handle} · {tuit.time}</span>
                     </div>
 

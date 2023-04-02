@@ -10,11 +10,6 @@ const WhatsHappening = () => {
     const tuitClickHandler = () => {
         const newTuit = {
             tuit: whatsHappening,
-            title: "Dummy title",
-            username: "NASA",
-            handle: "@nasa",
-            image: 'nasa.jpeg',
-            time: "now"
         }
         dispatch(createTuitThunk(newTuit));
     }

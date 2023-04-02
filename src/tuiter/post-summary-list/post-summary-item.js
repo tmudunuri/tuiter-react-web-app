@@ -16,9 +16,9 @@ const PostSummaryItem = (
             <div className="row">
                 <div className="col-10">
                     <div className="fw-bolder text-secondary">{post.topic}</div>
-                    <div class="fw-bolder">
-                        {post.username} <i class="fa-solid fa-circle-check text-primary ps-1 small"></i>
-                        <span class="text-secondary fw-normal"> - {post.time}</span>
+                    <div className="fw-bolder">
+                        {post.username} <i className="fa-solid fa-circle-check text-primary ps-1 small"></i>
+                        <span className="text-secondary fw-normal"> - {post.time}</span>
                     </div>
                     <div>{post.title}</div>
                     {post.tweets ?
