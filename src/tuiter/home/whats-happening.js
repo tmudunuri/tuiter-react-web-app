@@ -14,10 +14,6 @@ const WhatsHappening = () => {
             username: "NASA",
             handle: "@nasa",
             image: 'nasa.jpeg',
-            liked: false,
-            likes: 0,
-            disliked: false,
-            dislikes: 0,
             time: "now"
         }
         dispatch(createTuitThunk(newTuit));

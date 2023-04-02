@@ -8,11 +8,6 @@ export const findTuitsThunk = createAsyncThunk(
     await service.findTuits()
 )
 
-export const findSummariesThunk = createAsyncThunk(
-    'summaries/findSummaries', async () =>
-    await service.findSummaries()
-)
-
 export const deleteTuitThunk = createAsyncThunk(
     'tuits/deleteTuit',
     async (tuitId) => {
